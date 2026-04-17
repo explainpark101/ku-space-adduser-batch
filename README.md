@@ -1,15 +1,14 @@
-# template
+# Ku Space Adduser
 
-To install dependencies:
+고려대학교 공간예약시스템에서 이용자를 CSV 파일로 일괄 등록할 수 있도록 돕는 브라우저 확장 프로그램입니다.
 
-```bash
-bun install
+## 빌드
+
+```sh
+bun i && bun pack
 ```
 
-To run:
+의존성을 설치한 뒤 위 명령으로 빌드하면 `dist` 폴더에 확장이 만들어지고, `versions` 아래에 zip이 생성됩니다. Chrome에서는 `dist` 디렉터리를 개발자 모드로 불러오시면 됩니다.
 
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.2.23. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+# 확장프로그램 출시
+추후 출시 예정입니다.
