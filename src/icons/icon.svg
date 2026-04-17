@@ -1,0 +1,29 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with Gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="0" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main Shape (Rounded Square) - Centered at 64,64 -->
+  <rect x="14" y="14" width="100" height="100" rx="22" fill="url(#grad)" filter="url(#shadow)"/>
+
+  <!-- Icon Symbol (Adjusted Y coordinates by +10 to center vertically) -->
+  <path d="M44 54H54V44C54 41.2386 56.2386 39 59 39H69C71.7614 39 74 41.2386 74 44V54H84C86.7614 54 89 56.2386 89 59V69C89 71.7614 86.7614 74 84 74H74V84C74 86.7614 71.7614 89 69 89H59C56.2386 89 54 86.7614 54 84V74H44C41.2386 74 39 71.7614 39 69V59C39 56.2386 41.2386 54 44 54Z" fill="white" fill-opacity="0.9"/>
+  
+  <!-- Accent Dot (Adjusted Y coordinate to match) -->
+  <circle cx="84" cy="44" r="6" fill="#ffffff" />
+</svg>
